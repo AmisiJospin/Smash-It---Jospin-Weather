@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "SMASH IT - Jospin  AMISI",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

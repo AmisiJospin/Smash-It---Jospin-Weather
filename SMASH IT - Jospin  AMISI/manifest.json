@@ -1,0 +1,28 @@
+{
+  "name": "Smash It!",
+  "short_name": "Smash_It",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#e9b478",
+  "theme_color": "#d47508",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./images/icons/icon-64x64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+
+    {
+      "src": "./images/icons/icon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./images/icons/icon-256x256.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

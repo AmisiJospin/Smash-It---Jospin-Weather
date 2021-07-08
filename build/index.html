@@ -1,0 +1,125 @@
+<!--
+  Author: Jospin AMISI, +265992129078, +265886662568
+  Url: facebook.com/amissi.hassan
+  site web: www.jospinamisi.heroku.com
+  Email:jospinamissi@gmail.com
+  Version: 1.0.0 - 11.09.2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smash It | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/app.css" rel="stylesheet" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#2B32B2"/>
+    <link rel="apple-touch-icon" href="./images/icons/icon-256x256.png">
+    <link rel="icon" type="image/x-icon" sizes="36x36" href="images/icons/icon.png" />
+  </head>
+  <body>
+
+    <main class="main-container">
+      <h1>Smash It!</h1>
+      <div class="location-and-date">
+        <div class="searchbox" align="right">
+          <input
+            type="search"
+            placeholder="Enter Your City"
+            id="city"
+            class="inputSearch"
+            autocomplete="off"
+            
+          />
+        </div>
+        <h2 class="country-location">Lilongwe, MW</h2>
+        <div class="date">Friday, 11th September 2020</div>
+      </div>
+
+      <div class="content-info">
+        <div class="current-temperature">
+          <div class="current-temperature__icon-container">
+            <img
+              src="images/icons/unknown.png"
+              class="current-temperature__icon"
+              alt=""
+            />
+          </div>
+          <div class="current-temperature__content-container">
+            <div class="current-temperature__value">21&deg;C</div>
+            <div class="current-temperature__summary">Mostly Sunny</div>
+          </div>
+        </div>
+
+        <div class="current-stats">
+          <div>
+            <div class="current-stats__value">
+              <span class="temp_max">19</span>&deg;C
+            </div>
+            <div class="current-stats__label">High</div>
+            <div class="current-stats__value">
+              <span class="temp_min">13</span>&deg;
+            </div>
+            <div class="current-stats__label">Low</div>
+          </div>
+          <div>
+            <div class="current-stats__value">
+              <span class="wind_speed">5</span>m/s
+            </div>
+            <div class="current-stats__label">Wind</div>
+            <div class="current-stats__value"><span class="humidity">2</span>%</div>
+            <div class="current-stats__label">Humidity</div>
+          </div>
+          <div>
+            <div class="current-stats__value">
+              <span class="sun_rise">04:45</span>
+            </div>
+            <div class="current-stats__label">Sunrise</div>
+            <div class="current-stats__value">
+              <span class="sun_set">06:15</span>
+            </div>
+            <div class="current-stats__label">Sunset</div>
+          </div>
+        </div>
+
+        <div class="weather-by-hour">
+          <h2 class="weather-by-hour__heading">Today's weather</h2>
+          <div class="weather-by-hour__container">
+          
+          
+            </div>
+          
+        </div>
+     
+
+      <div class="next-5-days">
+        <h2 class="next-5-days__heading">It will pick a week's weather starting from the day you are searching</h2>
+        
+          <div class="next-5-days__container">
+            
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
+    <script src="./js/sw.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.20.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+  </body>
+</html>

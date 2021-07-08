@@ -1,0 +1,285 @@
+
+/*
+Author: Jospin AMISI, +265992129078, +265886662568
+Url: facebook.com/amissi.hassan
+site web: www.jospinamisi.heroku.com
+Email:jospinamissi@gmail.com
+Version: 1.0.0 - 11.09.2020
+*/
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 12px;
+  font-size: 100%;
+  font-family: "century gothic", sans-serif;
+  color: white;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #d47508 0%,
+     #e9b478 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    margin: 20px;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+ 
+}
+
+.content-info{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: #d47508;
+  width: 100%;
+  box-shadow: 0.99rem 0.99rem 1.5rem #553d1a, -0.3rem -0.1rem 0.2rem #7e3308;
+}
+
+@media screen and (min-width: 920px) {
+  .main-container {
+    width: 880px;
+    margin: 8px auto;
+    padding: 10px;
+    font-size: 1.1em;
+  }
+}
+
+.main-container h1{
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* location-and-date */
+.location-and-date {
+  width: 100%;
+}
+
+.country-location {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.searchbox{
+  width: 70%;
+  float:right;
+  margin-top: -50px;
+}
+
+.inputSearch {
+  width: 60%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 20px 0;
+  background-color: white;
+  border: 1.3px solid rgb(87, 41, 4);
+  /* background-image: url("searchicon.png"); */
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+
+
+/* current-temperature */
+.current-temperature {
+  display: flex;
+  margin-top: 0.25em;
+  width: 100%;
+}
+
+.current-temperature__icon-container {
+  flex-grow: 1.25;
+  text-align: center;
+}
+
+.current-temperature__content-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.current-temperature__icon {
+  width: 10.5em;
+}
+
+.current-temperature__value {
+  font-size: 5.25em;
+  font-weight: 300;
+}
+
+.current-temperature__summary {
+  margin-top: -0.5em;
+  margin-left: -0.6em;
+  text-align: center;
+  font-size: 1.125em;
+}
+
+/* current-stats */
+.current-stats {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1em;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 700px) {
+  .current-stats {
+    margin-bottom: 1em;
+    padding-bottom: 0;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+.current-stats__value {
+  margin-top: 1em;
+  font-size: 1.44em;
+}
+
+.current-stats__label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 700px) {
+  .current-temperature,
+  .current-stats {
+    width: 50%;
+  }
+}
+
+/* weather-by-hour */
+.weather-by-hour {
+  display: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .weather-by-hour {
+    display: block;
+  }
+}
+
+.weather-by-hour__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-by-hour__heading,
+.next-5-days__heading {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1em;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .weather-by-hour__heading,
+  .next-5-days__heading {
+    font-size: 1.125em;
+  }
+}
+
+.weather-by-hour__item {
+  padding: 0.8em 0;
+  width: 13%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  font-size: 1.125em;
+  text-align: center;
+}
+
+@media screen and (min-width: 880px) {
+  .weather-by-hour__item {
+    width: 6.05em;
+  }
+}
+
+.weather-by-hour__hour {
+  margin-bottom: 0.5em;
+}
+
+/* next-5-days */
+.next-5-days {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.next-5-days__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.next-5-days__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.3em;
+  padding: 0.8em 0;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.19em;
+  text-align: center;
+}
+
+.next-5-days__label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.83em;
+}
+
+.next-5-days__date,
+.next-5-days__high,
+.next-5-days__low,
+.next-5-days__icon,
+.next-5-days__rain,
+.next-5-days__wind {
+  width: 33.33333%;
+  font-size: 0.95em;
+}
+
+.next-5-days__date,
+.next-5-days__high,
+.next-5-days__low {
+  margin-bottom: 0.6em;
+}
+
+@media screen and (min-width: 450px) {
+  .next-5-days__date,
+  .next-5-days__high,
+  .next-5-days__low,
+  .next-5-days__icon,
+  .next-5-days__rain,
+  .next-5-days__wind {
+    width: 16.666666%;
+    margin-bottom: initial;
+  }
+
+  .next-5-days__date {
+    order: -2;
+  }
+
+  .next-5-days__icon {
+    order: -1;
+  }
+}
